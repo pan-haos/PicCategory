@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.we.piccategory.widget.CircleImageView
+        android:id="@+id/recommend_head_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:src="@mipmap/head_img"
+        app:civ_border_color="@color/green"
+        app:civ_fill_color="@color/head_back" />
+
+
+    <TextView
+        android:id="@+id/recommend_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/recommend_head_img"
+        android:paddingLeft="5dp"
+        android:text="流浪"
+        android:textColor="@color/real_black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recommend_name"
+        android:layout_toRightOf="@id/recommend_head_img"
+        android:padding="5dp"
+        android:text="2017年10月23日"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/recommend_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recommend_head_img" />
+
+
+    <ImageView
+        android:id="@+id/user_img"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/recommend_head_img"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:src="@mipmap/build" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/user_img"
+        android:layout_marginTop="10dp"
+        android:background="@color/lin_color" />
+
+
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/page_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_tag"
+            style="@style/commonEtStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/make_tag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/small_btn_selector"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="打标签"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <com.we.piccategory.widget.AutoScrollView
+        android:id="@+id/auto_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/page_bottom"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/page_out_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/page_iv"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+
+            <TextView
+                android:id="@+id/exit_page_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/page_iv"
+                android:layout_marginLeft="20dp"
+                android:scrollbars="horizontal"
+                android:text="已存在标签"
+                android:textColor="@color/primary"
+                android:textSize="20sp" />
+
+            <com.we.piccategory.widget.FlowLayout
+
+                android:id="@+id/exit_page_fl"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/exit_page_tv"
+                android:layout_marginLeft="20dp"
+                android:foregroundGravity="center">
+
+
+            </com.we.piccategory.widget.FlowLayout>
+
+            <TextView
+                android:id="@+id/my_page_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/exit_page_fl"
+                android:layout_marginLeft="20dp"
+                android:text="我的标签"
+                android:textColor="@color/primary"
+                android:textSize="20sp" />
+
+            <com.we.piccategory.widget.FlowLayout
+                android:id="@+id/my_page_fl"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/my_page_tv"
+                android:layout_marginLeft="20dp">
+
+
+            </com.we.piccategory.widget.FlowLayout>
+
+        </RelativeLayout>
+
+
+    </com.we.piccategory.widget.AutoScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/top_alpha_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/page_color"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/page_iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:src="@mipmap/iback" />
+
+        <TextView
+            android:id="@+id/page_top_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="打标签"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/page_iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@mipmap/tag" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

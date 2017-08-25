@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_top_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/primary"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/search_top_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:src="@mipmap/iback" />
+
+
+    <EditText
+        android:id="@+id/search_top_et"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/arcs_common_shape"
+        android:gravity="center"
+        android:hint="搜索分类/标签/关键字"
+        android:maxLines="1"
+        android:textColor="@color/text_colors"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/search_top_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="20dp"
+        android:text="搜索"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</LinearLayout>

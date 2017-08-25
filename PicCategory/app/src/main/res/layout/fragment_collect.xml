@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <com.we.piccategory.widget.PinView
+        android:id="@+id/pin_View"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/task_num_ly"
+        style="@style/setting_layout"
+        android:layout_width="match_parent">
+
+
+        <TextView
+            style="@style/setting_tv_style"
+            android:text="@string/task_num" />
+
+        <TextView
+            android:id="@+id/tv_task_num"
+            style="@style/my_tv_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp" />
+
+
+        <View style="@style/setting_line_style" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tak_comp_ly"
+        style="@style/setting_layout"
+        android:layout_width="match_parent">
+
+        <TextView
+            style="@style/setting_tv_style"
+            android:text="@string/task_comp" />
+
+        <TextView
+            android:id="@+id/tv_task_comp"
+            style="@style/my_tv_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp" />
+
+
+        <View style="@style/setting_line_style" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/task_other_credits_ly"
+        style="@style/setting_layout"
+        android:layout_width="match_parent">
+
+
+        <TextView
+            style="@style/setting_tv_style"
+            android:text="@string/task_other_credits" />
+
+        <TextView
+            android:id="@+id/tv_task_other_credits"
+            style="@style/my_tv_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp" />
+
+
+        <View style="@style/setting_line_style" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

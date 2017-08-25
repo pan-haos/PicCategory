@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_arr">
+        <item>计算机/互联网/通信</item>
+        <item>公务员/行政/事业单位</item>
+        <item>金融/银行/投资/保险</item>
+        <item>商业/服务业/个体户</item>
+        <item>生产/工艺/制造</item>
+        <item>医疗/护理/制药</item>
+        <item>文化/广告/传媒</item>
+        <item>娱乐/艺术/表演</item>
+        <item>律师/法官/法务</item>
+        <item>模特/演员/导演</item>
+        <item>空姐/乘务/飞行员</item>
+        <item>教育/培训</item>
+        <item>其他</item>
+    </string-array>
+
+    <!--运动/阅读/旅游/音乐/饮茶/影视/舞蹈/棋牌/社交/其它-->
+
+    <string-array name="check_arr">
+        <item>运动</item>
+        <item>阅读</item>
+        <item>旅游</item>
+        <item>音乐</item>
+        <item>饮茶</item>
+        <item>影视</item>
+        <item>舞蹈</item>
+        <item>棋牌</item>
+        <item>社交</item>
+        <item>其它</item>
+    </string-array>
+</resources>

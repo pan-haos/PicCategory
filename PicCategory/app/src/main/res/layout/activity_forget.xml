@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/back_layout" />
+
+    <EditText
+        android:id="@+id/et_forget_tel"
+        style="@style/commonEtStyle"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@mipmap/phone"
+        android:hint="@string/phone_et"
+        android:inputType="phone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/et_value"
+            style="@style/commonEtStyle"
+            android:drawableLeft="@mipmap/check"
+            android:hint="@string/check_num_et"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/tv_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/et_value"
+            android:layout_alignRight="@id/et_value"
+            android:padding="10dp"
+            android:text="@string/get_check"
+            android:textColor="@color/primary"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/next"
+        style="@style/commonTvStyle"
+        android:text="下一步" />
+
+
+</LinearLayout>

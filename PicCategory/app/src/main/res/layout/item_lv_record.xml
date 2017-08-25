@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+
+    <ImageView
+        android:id="@+id/item_iv_record"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:src="@mipmap/product" />
+
+
+    <TextView
+        android:id="@+id/item_current_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/item_iv_record"
+        android:text="系统当前标签："
+        android:textColor="@color/real_black" />
+
+    <TextView
+        android:id="@+id/item_sys_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/item_current_tv"
+        android:text="天使、魔鬼"
+        android:textColor="@color/lightgrey" />
+
+
+    <TextView
+
+        android:id="@+id/item_my_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_current_tv"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/item_iv_record"
+        android:text="我的标签："
+        android:textColor="@color/real_black" />
+
+
+    <TextView
+        android:id="@+id/item_my_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_current_tv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/item_my_tv" />
+
+
+    <TextView
+        android:id="@+id/item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/item_iv_record"
+        android:text="2015-10-23 10:20"
+        android:textColor="@color/primary" />
+
+
+    <ImageView
+        android:id="@+id/item_record_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/focus" />
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/item_home_iv"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_weight="1" />-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_weight="2">-->
+
+    <!--<TextView-->
+    <!--android:text=""-->
+    <!--android:id="@+id/_item_home_tv"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="left"-->
+    <!--android:textColor="@color/black"-->
+    <!--android:textSize="17sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/label"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:text="标签数："-->
+    <!--android:textColor="@color/lightgrey" />-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/_item_home_tv_num"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_toRightOf="@id/label"-->
+    <!--android:layout_weight="1"-->
+    <!--android:textColor="@color/primary"-->
+    <!--android:textSize="20sp" />-->
+
+
+    <!--</RelativeLayout>-->
+
+
+</RelativeLayout>

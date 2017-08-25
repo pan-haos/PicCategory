@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">图片分类</string>
+    <string name="home_name">首页</string>
+    <string name="category">分类</string>
+    <string name="quick">发布</string>
+    <string name="recommend">推荐</string>
+    <string name="user_center">我的</string>
+
+
+    <string name="username_et">请输入用户名/手机号/邮箱</string>
+    <string name="pwd_et">请输入密码</string>
+    <string name="forget">忘记密码</string>
+    <string name="phone_et">请输入手机号</string>
+    <string name="check_num_et">请输入验证码</string>
+    <string name="get_check">获取验证码</string>
+    <string name="ensure">同意注册即确认同意用户试用情况</string>
+    <string name="new_pwd">请输入新密码</string>
+    <string name="text">qwertyuiopasdfghjklzxcvbnm1234567890</string>
+
+    <string name="next">下一步</string>
+    <string name="set_username">设置用户名</string>
+    <string name="set_pwd">设置密码</string>
+
+    <string name="chose_preference">请选择你的爱好</string>
+    <string name="chose_job">请选择你的职业</string>
+    <string name="chose_sex">请选择您的性别</string>
+
+
+    <!--设置界面字符配置-->
+    <string name="setting_credits">积分详情</string>
+    <string name="setting_record">操作记录</string>
+    <string name="setting_push">消息推送</string>
+    <string name="setting_my_push">我的上传</string>
+
+    <string name="setting_help">帮助中心</string>
+    <string name="setting_about_us">关于我们</string>
+    <string name="setting_comment">意见反馈</string>
+    <string name="account_set">账户设置</string>
+    <string name="my_credits">我的积分</string>
+
+
+    <string name="phone">手机号</string>
+    <string name="chang_pwd">修改密码</string>
+
+    <string name="phone_change_et">请输入新手机号</string>
+
+
+    <string name="task_num">任务总数</string>
+    <string name="task_comp">完成数量</string>
+    <string name="task_other_credits">完成额外积分</string>
+
+</resources>

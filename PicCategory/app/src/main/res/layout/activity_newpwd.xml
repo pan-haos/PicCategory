@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/back_layout" />
+
+    <EditText
+        android:id="@+id/et_new_pwd"
+        style="@style/commonEtStyle"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@mipmap/phone"
+        android:hint="@string/new_pwd"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/next2"
+        style="@style/commonTvStyle"
+        android:text="下一步" />
+
+</LinearLayout>

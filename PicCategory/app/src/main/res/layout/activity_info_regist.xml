@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/back_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.we.piccategory.widget.CircleImageView
+            android:id="@+id/head_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/head_img"
+            app:civ_border_color="@color/green"
+            app:civ_fill_color="@color/head_back" />
+
+        <RelativeLayout
+            style="@style/info_relative_layout"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/tv_set_name"
+                style="@style/my_tv_style"
+                android:layout_centerVertical="true"
+                android:text="用户名" />
+
+            <EditText
+                android:id="@+id/et_set_name"
+                style="@style/EtStyle"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_set_name"
+                android:digits="@string/text"
+                android:hint="@string/set_username" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/lin_color" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout style="@style/info_relative_layout">
+
+            <TextView
+                android:id="@+id/tv_set_pwd"
+                style="@style/my_tv_style"
+                android:layout_centerVertical="true"
+                android:text="密    码" />
+
+            <EditText
+                android:id="@+id/et_set_pwd"
+                style="@style/EtStyle"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_set_pwd"
+                android:hint="@string/set_pwd"
+                android:inputType="textPassword" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/lin_color" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/info_relative_layout">
+
+            <TextView
+                android:id="@+id/tv_set_sex"
+                style="@style/my_tv_style"
+                android:layout_centerVertical="true"
+                android:text="性    别" />
+
+            <RadioGroup
+                android:id="@+id/set_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_set_sex"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男" />
+
+                <RadioButton
+                    android:id="@+id/rb_women"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/lin_color" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/info_relative_layout">
+
+            <TextView
+                android:id="@+id/tv_set_job"
+                style="@style/my_tv_style"
+                android:layout_centerVertical="true"
+                android:text="职    业" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/job_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_set_job"
+                android:entries="@array/spinner_arr"
+                android:spinnerMode="dropdown">
+
+            </android.support.v7.widget.AppCompatSpinner>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/lin_color" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/info_relative_layout">
+
+            <TextView
+                android:id="@+id/tv_set_pref"
+                style="@style/my_tv_style"
+                android:layout_centerVertical="true"
+                android:text="爱    好" />
+
+            <com.we.piccategory.widget.CheckSpinner
+                android:id="@+id/pref_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_set_pref"
+                android:entries="@array/check_arr">
+
+            </com.we.piccategory.widget.CheckSpinner>
+
+            <TextView
+                android:id="@+id/tv_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/pref_spinner" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/lin_color" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/commit_info"
+            style="@style/commonTvStyle"
+            android:text="提交信息" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

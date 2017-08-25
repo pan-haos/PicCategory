@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--账户设置-->
+
+    <RelativeLayout
+        android:id="@+id/account_set_ly"
+        style="@style/setting_layout"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_credits"
+            style="@style/setting_iv_style"
+            android:src="@mipmap/credits" />
+
+        <TextView
+            style="@style/setting_tv_style"
+            android:layout_toRightOf="@id/iv_credits"
+            android:text="@string/account_set" />
+
+        <!--<TextView-->
+        <!--style="@style/setting_tv_style"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="5dp"-->
+        <!--android:background="@drawable/small_btn_selector"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="50dp"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:text="查看" />-->
+
+        <ImageView
+            style="@style/setting_goto_style"
+            android:src="@mipmap/join" />
+
+        <View style="@style/setting_line_style" />
+
+    </RelativeLayout>
+
+
+    <!--操作记录-->
+    <RelativeLayout
+        android:id="@+id/operation_record_ly"
+        style="@style/setting_layout"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_record"
+            style="@style/setting_iv_style"
+            android:src="@mipmap/record" />
+
+        <TextView
+            style="@style/setting_tv_style"
+            android:layout_toRightOf="@id/iv_record"
+            android:text="@string/setting_record" />
+
+        <ImageView
+            style="@style/setting_goto_style"
+            android:src="@mipmap/join" />
+
+
+        <View style="@style/setting_line_style" />
+
+    </RelativeLayout>
+
+
+    <!--消息推送-->
+
+
+    <RelativeLayout
+        android:id="@+id/msg_push_ly"
+        style="@style/setting_layout"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_msg_push"
+            style="@style/setting_iv_style"
+            android:src="@mipmap/msg_push" />
+
+        <TextView
+            style="@style/setting_tv_style"
+            android:layout_toRightOf="@id/iv_msg_push"
+            android:text="@string/setting_my_push" />
+
+        <ImageView
+            style="@style/setting_goto_style"
+            android:src="@mipmap/join" />
+
+        <View style="@style/setting_line_style" />
+
+    </RelativeLayout>
+
+
+    <!--帮助中心-->
+
+    <RelativeLayout
+        android:id="@+id/help_center_ly"
+        style="@style/setting_layout"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/help_center"
+            style="@style/setting_iv_style"
+            android:src="@mipmap/help" />
+
+        <TextView
+            style="@style/setting_tv_style"
+            android:layout_toRightOf="@id/help_center"
+            android:text="@string/setting_help" />
+
+        <ImageView
+            style="@style/setting_goto_style"
+            android:src="@mipmap/join" />
+
+        <View style="@style/setting_line_style" />
+
+    </RelativeLayout>
+
+
+    <!--关于我们-->
+
+    <RelativeLayout
+        android:id="@+id/about_us_ly"
+        style="@style/setting_layout"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/about_us"
+            style="@style/setting_iv_style"
+            android:src="@mipmap/about_us" />
+
+        <TextView
+            style="@style/setting_tv_style"
+            android:layout_toRightOf="@id/about_us"
+            android:text="@string/setting_about_us" />
+
+        <ImageView
+            style="@style/setting_goto_style"
+            android:src="@mipmap/join" />
+
+        <View style="@style/setting_line_style" />
+
+    </RelativeLayout>
+
+
+    <!--意见反馈-->
+
+    <RelativeLayout
+        android:id="@+id/comment_ly"
+        style="@style/setting_layout"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/comment"
+            style="@style/setting_iv_style"
+            android:src="@mipmap/comment" />
+
+        <TextView
+            style="@style/setting_tv_style"
+            android:layout_toRightOf="@id/comment"
+            android:text="@string/setting_comment" />
+
+        <ImageView
+            style="@style/setting_goto_style"
+            android:src="@mipmap/join" />
+
+        <View style="@style/setting_line_style" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_quit"
+        style="@style/setting_btn_style"
+        android:onClick="onClick"
+        android:text="退出登录" />
+
+
+</LinearLayout>

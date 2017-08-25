@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/back_layout"/>
+
+    <!--操作记录-->
+    <RelativeLayout
+        android:id="@+id/phone_ly"
+        style="@style/setting_layout"
+        android:layout_width="match_parent"
+        android:background="@color/white">
+
+
+        <TextView
+            style="@style/setting_tv_style"
+            android:text="@string/phone" />
+
+        <ImageView
+            android:id="@+id/iv_go"
+            style="@style/setting_goto_style"
+            android:src="@mipmap/join" />
+
+
+        <TextView
+            android:id="@+id/account_tel_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/iv_go" />
+
+        <View style="@style/home_line_style" />
+
+    </RelativeLayout>
+
+
+    <!--操作记录-->
+    <RelativeLayout
+        android:id="@+id/change_pwd_ly"
+        style="@style/setting_layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:background="@color/white">
+
+
+        <TextView
+            style="@style/setting_tv_style"
+            android:text="@string/chang_pwd" />
+
+        <ImageView
+            style="@style/setting_goto_style"
+            android:src="@mipmap/join" />
+
+
+        <View style="@style/home_line_style" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

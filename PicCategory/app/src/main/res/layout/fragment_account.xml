@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/info_relative_layout">
+
+        <TextView
+            android:id="@+id/tv_set_name"
+            style="@style/my_tv_style"
+            android:layout_centerVertical="true"
+            android:text="用户名" />
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/account_tv_style"
+            android:layout_toRightOf="@+id/tv_set_name"
+            android:text="潘浩" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/lin_color" />
+
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/info_relative_layout">
+
+        <TextView
+            android:id="@+id/tv_grade"
+            style="@style/my_tv_style"
+            android:layout_centerVertical="true"
+            android:text="积    分" />
+
+
+        <TextView
+            android:id="@+id/tv_num"
+            style="@style/account_tv_style"
+            android:layout_toRightOf="@+id/tv_grade"
+            android:text="230" />
+
+
+        <TextView
+            style="@style/setting_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/small_btn_selector"
+            android:padding="5dp"
+            android:text="查看"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/lin_color" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout style="@style/info_relative_layout">
+
+        <TextView
+            android:id="@+id/tv_set_sex"
+            style="@style/my_tv_style"
+            android:layout_centerVertical="true"
+            android:text="性    别" />
+
+        <TextView
+            android:id="@+id/tv_sex"
+            style="@style/account_tv_style"
+            android:layout_alignBaseline="@+id/tv_set_sex"
+            android:layout_alignBottom="@+id/tv_set_sex"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/tv_set_sex"
+            android:layout_toRightOf="@+id/tv_set_sex"
+            android:text="男" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/lin_color" />
+
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/info_relative_layout">
+
+        <TextView
+            android:id="@+id/tv_set_job"
+            style="@style/my_tv_style"
+            android:layout_centerVertical="true"
+            android:text="职    业" />
+
+        <TextView
+            android:id="@+id/tv_job"
+            style="@style/account_tv_style"
+            android:layout_toRightOf="@+id/tv_set_job"
+            android:text="计算机/互联网/通信" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/lin_color" />
+
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/info_relative_layout">
+
+        <TextView
+            android:id="@+id/tv_set_pref"
+            style="@style/my_tv_style"
+            android:layout_centerVertical="true"
+            android:text="爱    好" />
+
+        <TextView
+            android:id="@+id/tv_pref"
+            style="@style/account_tv_style"
+            android:layout_toRightOf="@+id/tv_set_pref"
+            android:text="风景、美女、人物、旅游" />
+
+        <TextView
+            android:id="@+id/tv_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/pref_spinner" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/lin_color" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/pic"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="趣  图"
+        android:textColor="@color/primary"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/phone_num"
+            style="@style/etTextStyle"
+            android:drawableLeft="@drawable/username_selector"
+            android:hint="@string/phone_et"
+            android:inputType="phone"
+            android:maxLength="11" />
+
+        <EditText
+            android:id="@+id/check_value"
+            style="@style/etTextStyle"
+            android:layout_below="@id/phone_num"
+            android:layout_marginTop="2dp"
+            android:drawableLeft="@drawable/pwd_selector"
+            android:hint="@string/check_num_et"
+            android:inputType="textPassword"
+            android:maxLength="6" />
+
+        <TextView
+
+            android:id="@+id/tv_identify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/check_value"
+            android:layout_alignTop="@id/check_value"
+            android:layout_marginLeft="-120dp"
+            android:padding="10dp"
+            android:text="@string/get_check"
+            android:textColor="@color/primary"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_ensure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="@string/ensure"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/btn_style"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_to_login"
+        style="@style/btn_style"
+        android:text="返回登录"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

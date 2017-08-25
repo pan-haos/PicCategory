@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--这三个是app的主色调-->
+    <!--<color name="colorPrimary">#5677fc</color>-->
+    <!--<color name="primary">#cc5677fc</color>-->
+    <!--<color name="colorPrimaryDark">#455ede</color>-->
+    <!--<color name="colorPrimaryLight">#afbfff</color>-->
+
+    <color name="colorPrimary">#259B24</color>
+    <color name="primary">#f800b38a</color>
+
+    <color name="colorPrimaryDark">#00b38a</color>
+    <!--<color name="colorPrimaryDark">#56debe</color>-->
+
+
+    <color name="colorPrimaryLight">#72D572</color>
+    <color name="colorgs">#88f2e1c4</color>
+
+    <!--<color name="primary">#f800b38a</color>-->
+    <color name="alpPrimary">#56debe</color>
+
+    <color name="desColor">#0aa37f</color>
+
+
+    <color name="lightPrimary">#3300b38a</color>
+
+    <color name="startPrimary">#00b38a</color>
+    <!--其余颜色-->
+    <color name="white">#FFF</color>
+    <color name="black">#2d2d2d</color>
+    <color name="green">#31C27C</color>
+    <color name="red">#ff0000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="lightgrey">#707070</color>
+    <color name="lightwhite">#fefefe</color>
+    <color name="head_back">#e2e2e2</color>
+
+    <color name="text_colors">#999999</color>
+    <!--#f3f3f3-->
+    <color name="lin_color">#f3f3f3</color>
+
+    <color name="back_color">#f0f0dc</color>
+    <color name="ripple_color">#6621272B</color>
+
+    <color name="real_black">#202020</color>
+
+    <color name="textview_back_color">#fafafa</color>
+
+    <color name="page_color">#00b38b</color>
+
+    <color name="top_color">#f6f6f6</color>
+
+</resources>
